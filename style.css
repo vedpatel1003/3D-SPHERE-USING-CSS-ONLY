@@ -1,0 +1,178 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.scene {
+  width: 100vmin;
+  height: 100vmin;
+  margin: 2% auto;
+  perspective: 175vmin;
+  -webkit-box-reflect: below -25vmin linear-gradient(to bottom, #0000 25%, #000);
+}
+
+.wrapper {
+  width: 100%;
+  aspect-ratio: 1;
+  transform-style: preserve-3d;
+}
+
+.sphere {
+  position: relative;
+  width: 87.5%;
+  height: 87.5%;
+  margin: 0 auto;
+  transform-style: preserve-3d;
+  animation: rotate 7.5s infinite linear;
+}
+.sphere .ring {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 6px dashed;
+}
+.sphere .ring:nth-child(1) {
+  color: #e11973;
+  transform: rotateY(5.625deg);
+}
+.sphere .ring:nth-child(2) {
+  color: #9ed550;
+  transform: rotateY(11.25deg);
+}
+.sphere .ring:nth-child(3) {
+  color: #0c372e;
+  transform: rotateY(16.875deg);
+}
+.sphere .ring:nth-child(4) {
+  color: #95b1e3;
+  transform: rotateY(22.5deg);
+}
+.sphere .ring:nth-child(5) {
+  color: #71648a;
+  transform: rotateY(28.125deg);
+}
+.sphere .ring:nth-child(6) {
+  color: #4b8401;
+  transform: rotateY(33.75deg);
+}
+.sphere .ring:nth-child(7) {
+  color: #838eeb;
+  transform: rotateY(39.375deg);
+}
+.sphere .ring:nth-child(8) {
+  color: #c6e843;
+  transform: rotateY(45deg);
+}
+.sphere .ring:nth-child(9) {
+  color: #59e685;
+  transform: rotateY(50.625deg);
+}
+.sphere .ring:nth-child(10) {
+  color: #f26e23;
+  transform: rotateY(56.25deg);
+}
+.sphere .ring:nth-child(11) {
+  color: #2eea26;
+  transform: rotateY(61.875deg);
+}
+.sphere .ring:nth-child(12) {
+  color: #4f0e33;
+  transform: rotateY(67.5deg);
+}
+.sphere .ring:nth-child(13) {
+  color: #c14815;
+  transform: rotateY(73.125deg);
+}
+.sphere .ring:nth-child(14) {
+  color: #5f117b;
+  transform: rotateY(78.75deg);
+}
+.sphere .ring:nth-child(15) {
+  color: #f6f6b4;
+  transform: rotateY(84.375deg);
+}
+.sphere .ring:nth-child(16) {
+  color: #2b289f;
+  transform: rotateY(90deg);
+}
+.sphere .ring:nth-child(17) {
+  color: #752b65;
+  transform: rotateY(95.625deg);
+}
+.sphere .ring:nth-child(18) {
+  color: #36aef5;
+  transform: rotateY(101.25deg);
+}
+.sphere .ring:nth-child(19) {
+  color: #afefe6;
+  transform: rotateY(106.875deg);
+}
+.sphere .ring:nth-child(20) {
+  color: #d95090;
+  transform: rotateY(112.5deg);
+}
+.sphere .ring:nth-child(21) {
+  color: #86cb23;
+  transform: rotateY(118.125deg);
+}
+.sphere .ring:nth-child(22) {
+  color: #9e46dd;
+  transform: rotateY(123.75deg);
+}
+.sphere .ring:nth-child(23) {
+  color: #0ff418;
+  transform: rotateY(129.375deg);
+}
+.sphere .ring:nth-child(24) {
+  color: #64f194;
+  transform: rotateY(135deg);
+}
+.sphere .ring:nth-child(25) {
+  color: #d7580d;
+  transform: rotateY(140.625deg);
+}
+.sphere .ring:nth-child(26) {
+  color: #3fd12c;
+  transform: rotateY(146.25deg);
+}
+.sphere .ring:nth-child(27) {
+  color: #60dda5;
+  transform: rotateY(151.875deg);
+}
+.sphere .ring:nth-child(28) {
+  color: #7a57b9;
+  transform: rotateY(157.5deg);
+}
+.sphere .ring:nth-child(29) {
+  color: #3e412b;
+  transform: rotateY(163.125deg);
+}
+.sphere .ring:nth-child(30) {
+  color: #e0e715;
+  transform: rotateY(168.75deg);
+}
+.sphere .ring:nth-child(31) {
+  color: #33f749;
+  transform: rotateY(174.375deg);
+}
+.sphere .ring:nth-child(32) {
+  color: #68fc4e;
+  transform: rotateY(180deg);
+}
+
+@keyframes rotate {
+  to {
+    transform: rotateY(360deg);
+  }
+}
